@@ -1,0 +1,15 @@
+#rich-text-format .icon{
+    margin: 5px;
+}
+#rich-text-format .icon-bold{
+    width: 20px;
+}
+#rich-text-format .icon-italic{
+    width: 30px;
+}
+#rich-text-format .icon-underlined{
+    width: 30px;
+}
+#rich-text-format .icon-link{
+    cursor: pointer;
+}
