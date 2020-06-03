@@ -1,15 +1,136 @@
-#rich-text-format .icon{
-    margin: 5px;
+/* Start - Temporary settings */
+
+body {
+    background-color: black;
 }
-#rich-text-format .icon-bold{
+
+#rich-text-format .text-editor {
+    background-color: white;
+}
+
+
+/* End - Temporary settings */
+
+#rich-text-format {
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+#rich-text-format .top-menu {
+    border-bottom: 1px solid;
+    background-color: #FAFAFA;
+    min-height: 30px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#rich-text-format .top-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#rich-text-format .top-menu ul li {
+    list-style: none;
+    float: left;
+}
+
+#rich-text-format .top-menu .icon {
+    border-right: #EFEFEF solid 1px;
+    padding-right: 10px;
+}
+
+#rich-text-format .top-menu .icon-bold {
+    width: 17px;
+}
+
+#rich-text-format .top-menu .icon-italic {
+    width: 25px;
+}
+
+#rich-text-format .top-menu .icon-underlined {
+    width: 30px;
+}
+
+#rich-text-format .top-menu .icon-justify-left {
     width: 20px;
+    margin-top: 5px;
 }
-#rich-text-format .icon-italic{
-    width: 30px;
+
+#rich-text-format .top-menu .icon-juntify-center {
+    width: 25px;
+    margin-top: 3px;
 }
-#rich-text-format .icon-underlined{
-    width: 30px;
+
+#rich-text-format .top-menu .icon-juntify-right {
+    width: 20px;
+    margin-top: 5px;
 }
-#rich-text-format .icon-link{
+
+#rich-text-format .top-menu .icon-order-list {
+    width: 23px;
+    margin-top: 6px;
+}
+
+#rich-text-format .top-menu .icon-unordered-list {
+    width: 29px;
+    margin-top: 1px;
+}
+
+#rich-text-format .top-menu .icon-text-color {
+    width: 26px;
+    margin-top: 1px;
+}
+
+#rich-text-format .top-menu .icon-code {
+    width: 25px;
+    margin-top: 2px;
+}
+
+#rich-text-format .top-menu .iten-bold {
+    margin-top: 4px;
+}
+
+#rich-text-format .top-menu .iten-italic {
+    margin-top: 3px;
+}
+
+#rich-text-format .top-menu .iten-underlined {
+    margin-top: 1px;
+}
+
+#rich-text-format .top-menu .icon-link {
     cursor: pointer;
+    margin-right: 15px;
+}
+
+#rich-text-format .text-editor {
+    padding: 15px;
+    width: auto;
+    height: 300px;
+    resize: none;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+#rich-text-format .text-code {
+    display: none;
+    padding: 15px;
+    color: white;
+    width: 100%;
+    margin-bottom: -3px;
+    height: 400px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgb(29, 29, 29);
+    resize: none;
+}
+
+#rich-text-format .not-active {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
 }
