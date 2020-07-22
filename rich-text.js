@@ -1,6 +1,6 @@
 var selectorTextEditor = document.querySelector('#rich-text-format .text-editor');
 var seletorCode = document.querySelector('#rich-text-format .text-code');
-var vectorClass = ['bold', 'italic', 'underlined', 'justify-left', 'justify-center', 'order-list', 'justify-right']
+var vectorClass = ['bold', 'italic', 'underlined', 'justify-left', 'justify-center', 'order-list', 'justify-right', 'unordered-list']
 var richText = '#rich-text-format ';
 
 document.querySelector(richText + '.bold-click').onclick = function() {
@@ -69,28 +69,3 @@ function enabledIcons() {
         selector.classList.remove('not-active');
     });
 }
-
-
-
-// function editText2(value) {
-//     var range, sel;
-//     if (window.getSelection) {
-//         // Non-IE case
-//         sel = window.getSelection();
-//         if (sel.getRangeAt) {
-//             range = sel.getRangeAt(0);
-//         }
-//         document.designMode = "on";
-//         if (range) {
-//             sel.removeAllRanges();
-//             sel.addRange(range);
-//         }
-//         document.execCommand(value, false, null);
-//         document.designMode = "off";
-//     } else if (document.selection && document.selection.createRange &&
-//         document.selection.type != "None") {
-//         // IE case
-//         range = document.selection.createRange();
-//         range.execCommand(value, false, null);
-//     }
-// }
