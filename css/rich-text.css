@@ -1,24 +1,11 @@
-/* Start - Temporary settings */
-
-body {
-    background-color: black;
-}
-
-#rich-text-format .text-editor {
-    background-color: white;
-}
-
-
-/* End - Temporary settings */
-
 #rich-text-format {
-    border-radius: 4px;
-    box-shadow: 0 0 4px rgb(0, 0, 0);
+    border-radius: 7px;
+    box-shadow: 0 0 7px rgb(0, 0, 0);
 }
 
 #rich-text-format .top-menu {
     border-bottom: 1px solid;
-    background-color: #FAFAFA;
+    background-color: #f3ecec;
     min-height: 30px;
     padding: 5px;
     padding-left: 20px;
@@ -36,7 +23,7 @@ body {
 }
 
 #rich-text-format .top-menu .icon {
-    border-right: #EFEFEF solid 1px;
+    border-right: #d1cece solid 1px;
     padding-right: 10px;
 }
 
@@ -102,7 +89,7 @@ body {
 #rich-text-format .text-editor {
     padding: 15px;
     width: auto;
-    height: 300px;
+    height: 350px;
     resize: none;
     overflow-x: auto;
     overflow-y: scroll;
@@ -122,6 +109,8 @@ body {
     box-sizing: border-box;
     background-color: rgb(29, 29, 29);
     resize: none;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 #rich-text-format .not-active {

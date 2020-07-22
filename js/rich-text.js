@@ -3,6 +3,7 @@ var seletorCode = document.querySelector('#rich-text-format .text-code');
 var vectorClass = ['bold', 'italic', 'underlined', 'justify-left', 'justify-center', 'order-list', 'justify-right', 'unordered-list']
 var richText = '#rich-text-format ';
 
+// Click event on all buttons and calling the method that performs the editing on the texts
 document.querySelector(richText + '.bold-click').onclick = function() {
     editText('bold');
 }
@@ -31,15 +32,12 @@ document.querySelector(richText + '.code-click').onclick = function() {
     editCodeEditor();
 }
 
+// Insertion of editions in the text
 function editText(value) {
     document.execCommand(value);
 }
 
-function setColor(value) {
-    document.execCommand('styleWithCSS', false, true);
-    document.execCommand('foreColor', false, value);
-}
-
+// Make visible the option to edit via HTML
 function editCodeEditor() {
     if (selectorTextEditor.style.display == 'none') {
         selectorTextEditor.innerHTML = seletorCode.value;
@@ -54,6 +52,7 @@ function editCodeEditor() {
     }
 }
 
+// Disables icons when HTML editor is enabled
 function disabledIcons() {
     vectorClass.forEach(element => {
         var selector = document.querySelector(richText + '.' + element + '-click');
@@ -62,6 +61,7 @@ function disabledIcons() {
     });
 }
 
+// Enables icons when HTML editor is disabled
 function enabledIcons() {
     vectorClass.forEach(element => {
         var selector = document.querySelector(richText + '.' + element + '-click');
