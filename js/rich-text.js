@@ -75,7 +75,7 @@ function enabledIcons() {
 }
 
 function rich_text_format(value) {
-    if (value == "retun-text") {
+    if (value == "return-text") {
         return seletorCode.value;
     }
 }

@@ -14,7 +14,7 @@ What is required for use:
 </br></br>
 
 To obtain the resulting HTML, it is necessary to use the following Javascript code:
- - rich_text_format('retun-text');
+ - rich_text_format('return-text');
 </br></br>
 
 Example in normal editing mode:
