@@ -73,3 +73,9 @@ function enabledIcons() {
         selector.classList.remove('not-active');
     });
 }
+
+function rich_text_format(value) {
+    if (value == "retun-text") {
+        return seletorCode.value;
+    }
+}
